@@ -50,7 +50,7 @@ const deleteNote = (id) =>
     },
   });
 
-const renderActiveNote = () => { ///add active note to pass through?
+const renderActiveNote = () => { 
   hide(saveNoteBtn);
 
   if (activeNote.id) {
@@ -89,7 +89,7 @@ const handleNoteDelete = (e) => {
     activeNote = {};
   }
 
-  deleteNote(noteId).then(() => {  //delete this maybe if i am having errors here?
+  deleteNote(noteId).then(() => { 
     getAndRenderNotes();
     renderActiveNote();
   });
